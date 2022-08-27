@@ -12,6 +12,7 @@ import javax.xml.ws.Response;
 import java.util.List;
 
 @RestController
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 public class TodoController {
     @Autowired
     private TodoService todoService;
